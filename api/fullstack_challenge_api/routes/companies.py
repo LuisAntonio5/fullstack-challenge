@@ -9,4 +9,7 @@ router = APIRouter()
 
 @router.get("/companies")
 async def get_companies(db: Connection = Depends(get_db)):
-    pass
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM companies")
+    companies = cursor.fetchall()
+    return {"companies": companies}
