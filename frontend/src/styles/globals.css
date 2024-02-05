@@ -14,3 +14,35 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.company-card {
+  background-color: #65cf50;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.deal-card {
+  background-color: #50b2cf;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.landing-page-button{
+  background-color: #fff;
+  border: 1px solid #010101;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.landing-page-button:hover{
+  background-color: #010101;
+  color: #fff;
+}
