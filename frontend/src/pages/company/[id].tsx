@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import CompanyCard from '../../components/companyCard';
 import DealCard from '../../components/dealCard';
 import axios from 'axios';
@@ -37,6 +38,11 @@ const CompanyPage = () => {
 
   return (
     <div>
+      <div className="navbar">
+        <Link className='homeBtn' href={`/`}><h1>Home</h1></Link>
+        <Link className='homeBtn' href={`/companies`}><h1>Companies</h1></Link>
+        <Link className='homeBtn' href={`/deals`}><h1>Deals</h1></Link>
+      </div>
       {errorMessage ? (
         <p>{errorMessage}</p>
       ) : (
@@ -44,7 +50,7 @@ const CompanyPage = () => {
           <h1>Company Details</h1>
           <CompanyCard company={company} />
           <h2>Deals</h2>
-          {deals.length > 0 && (
+          {deals && deals.length > 0 && (
             <>
               {deals.map((deal) => (
                 <DealCard key={deal.id} deal={deal} />
