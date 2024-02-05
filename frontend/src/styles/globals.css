@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+.company-card:hover {
+  background-color: #88d578;
+}
+
 .deal-card {
   background-color: #50b2cf;
   border: 1px solid #ccc;
@@ -45,4 +49,28 @@ a {
 .landing-page-button:hover{
   background-color: #010101;
   color: #fff;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.homeBtn{
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.homeBtn:hover{
+  text-decoration: underline
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #000;
+}
+
+.search-container{
+  margin: 10px;
 }
